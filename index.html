@@ -1,0 +1,117 @@
+<head>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<main>
+<div class="side" id="left">
+   <div class="page" onClick="autoFocus()">
+      <div class="titlebar">
+         <div class="dot close"></div>
+         <div class="dot minimise"></div>
+         <div class="dot maximise"></div>
+         <p>AlexDev@localhost</p>
+      </div>
+      <div class="spacer">
+         <div class="shell_line">
+            <p>WinLike PowerShell</p>
+         </div>
+         <div class="shell_line">
+            <p>Copyright (C) DefinitelyNotMicrosoft Corporation. All rights reserved.</p>
+         </div>
+         <br>
+         <div class="shell_line">
+            <p>PS C:\Users\guest> </p>
+            <b>ssh</b>
+            <p>AlexDev@localhost</p>
+         </div>
+         <div class="shell_line">
+            <p>AlexDev@localhost's password:</p>
+         </div>
+         <div class="shell_line">
+            <p>Password Accepted ! </p>
+            <br>
+            <p>
+               Access Granted.
+            </p>
+            <br>
+            <p>
+               Welcome !
+            </p>
+         </div>
+         </br>
+         <div class="shell_line">
+            <p class="pink">user</p>
+            <p>@</p>
+            <p class="blue">guest</p>
+            <p>/tmp$</p>
+            <b>whoAmI</b>
+         </div>
+         <div class="shell_line">
+            <p>=====\ Who Am I ? /=====</p>
+            <br>
+            <p>
+               I am a Dev. who likes video games
+            </p>
+            <br>
+            <p>
+               and design
+            </p>
+         </div>
+         </br>
+         <form id="line">
+            <div class="shell_line">
+               <p class="pink">user</p>
+               <p class="at">@</p>
+               <p class="blue">guest</p>
+               <p class="at">/tmp$</p>
+               <div id="cmd">
+                  <span id="command"></span>
+                  <div id="cursor"></div>
+               </div>
+               <input id="cmdTyper" type="text" name="command" value="" /></p>
+            </div>
+            </br>
+         </form>
+      </div>
+   </div>
+</div>
+<div class="side" id="right">
+   <main>
+      <nav>
+         <ul>
+            <li>
+               <a href="#">Qui suis-je ?</a>
+            </li>
+            <li>
+               <a href="#">Mes Projets</a>
+            </li>
+            <li>
+               <a href="#">Contact</a>
+            </li>
+         </ul>
+      </nav>
+      <center>
+         <div id="helloworld" height="250px" class="shown" onclick="flipFlopClass()">
+            <h1>Hello</h1>
+            <h2>World<a class="blink">/</a></h2>
+            <img src="https://images.vexels.com/media/users/3/158105/isolated/preview/22becce14efa74bc6c83bec78f9d9b1e-pixel-hand-cursor-icon-by-vexels.png" id="pointer">
+         </div>
+         <div onclick="flipFlopClass()">
+            <canvas id="game" width="400px" height="250px" class="canvas hidden">
+            </canvas>
+            <p id="direction"></p>
+         </div>
+      </center>
+      <footer>
+         <div id="social_media_bar">
+            <a href="#" id="facebook" class="fab fa-facebook-square"></a>
+            <a href="#" id="twitter" class="fab fa-twitter-square"></a>
+            <a href="#" id="instagram" class="fab fa-instagram-square"></a>
+            <a href="#" id="linkedin" class="fab fa-linkedin"></a>
+         </div>
+         <div>
+            <i>@AlexVedrine</i>
+         </div>
+      </footer>
+</div>
+</main>

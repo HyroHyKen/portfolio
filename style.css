@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+    Début du CSS
+*/
+html {
+ height: 100%;
+}
+
+body {
+ text-align: center;
+ height: 100%; 
+}
+
+.side{
+  display:inline-block;
+  width:50%;
+  height:100%;
+}
+
+#left{
+  background:url(https://i.pinimg.com/originals/d9/6c/93/d96c9383beb63a6457c96eefc3511379.jpg) -25px -50px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  float:left;
+  height:100%;
+  min-height: 969px;background-size: calc(100% + 50px);
+}
+
+#right{
+  background-color:white;
+  padding-top:10%;
+}
+
+/* 
+    Début du Right side
+*/
+
+.page {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width:30%;
+  position: absolute;
+  top:30%;
+  left:9.5%;
+}
+.page .titlebar {
+  background-color: #ededed;
+  height: 44px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.page .titlebar .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  float:left;
+}
+.page .titlebar .dot.close {
+  background-color: #ef6866;
+}
+.page .titlebar .dot.minimise {
+  background-color: #f5ed49;
+}
+.page .titlebar .dot.maximise {
+  background-color: #89c665;
+}
+.page .titlebar p {
+  font-family: 'Source Code Pro', monospace;
+  text-align:center;
+}
+.page .titlebar .dot + .dot {
+  margin-left: 7px;
+}
+.page .spacer {
+  height: 400px;
+  background-color: black;
+  opacity:60%;
+  overflow:auto;
+}::selection {
+  background-color: white;
+  color:black;
+}
+
+.page .spacer form {
+  margin-top:-25px  
+}
+
+.page .spacer .shell_line {
+  color:white;
+  text-align:left;
+  padding-top:2px;
+  padding-left:4px;
+  font-family: 'Source Code Pro', monospace;
+}
+.page .spacer .shell_line:first-child {
+  color:white;
+  text-align:left;
+  padding-top:20px;
+  padding-left:4px;
+}
+.page .spacer .shell_line b{
+  display: inline-block;
+  color:yellow;
+  margin-left:8px;
+}
+
+.page .spacer .shell_line .blue{
+  color:blue;
+  margin-left:8px;
+  float:left;
+}
+
+.page .spacer .shell_line .pink{
+  color:pink;
+  margin-left:8px;
+  float:left;
+}
+.page .spacer .shell_line .at{
+  color:white;
+  margin-left:8px;
+  float:left;
+}
+
+.page .spacer .shell_line p {
+  display: inline-block;
+  color:white;
+  margin-left:8px;
+}
+
+.page .spacer form p {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  text-align:left;
+  float:left;
+  color:white;
+  margin-left:8px;
+}
+
+.page .spacer .shell_line input {
+  color:white;
+  text-align:left;
+  padding-top:2px;
+  padding-left:4px;
+  font-family: 'Source Code Pro', monospace;
+  background:none;
+  border:none;
+  font-size:15px;
+  caret-color:transparent;
+}
+
+.page .spacer .shell_line inputinput:focus {
+  outline:none;
+}
+
+.page .spacer .shell_line .blink {
+  background-color:white;
+}
+
+
+/* 
+    Début du Nav
+*/
+
+nav{
+  margin:0 auto;
+  width:75%;
+}
+
+nav ul{
+}
+
+nav ul li{
+  display:inline-block; 
+  margin-left: auto;
+  margin-right: auto;
+  width:32%;
+  text-align:center;
+  transition: transform 0.2s;
+}
+
+nav ul li a {
+  text-transform:uppercase;
+  text-decoration:none;
+  font-size:25px;
+  font-family: 'Secular One', sans-serif;
+  color:purple;
+  transition: color 0.2s, transform 0.2s;
+  word-spacing:5px;
+}
+
+nav ul li a:before {
+  content:"{  ";
+}
+nav ul li a:after {
+  content:"  }";
+}
+
+nav ul li a:hover {
+  text-decoration:underline;
+  font-family: 'Secular One', sans-serif;
+  color:black;
+}
+
+nav ul li:hover {
+  transform: translate(0px,10px);
+}
+
+/* 
+    Fin du Nav
+    Début du Center
+*/
+
+center {
+  padding-top:25%;
+  margin-bottom:20%;
+}
+
+center h1 {
+  text-transform:uppercase;
+  font-size:80px;
+  font-family: 'Secular One', sans-serif;
+  letter-spacing:5px;
+  word-spacing:7px;
+  transition: letter-spacing 0.2s, word-spacing 0.2s;
+}
+
+center h1:before {
+  content: "<";
+}
+
+center h2 {
+  text-transform:uppercase;
+  font-size:70px;
+  font-family: 'Secular One', sans-serif;
+  letter-spacing:5px;
+  word-spacing:7px;
+  transition: letter-spacing 0.2s, word-spacing 0.2s;
+}
+
+center h2:after {
+  content: "";
+}
+
+.blink {
+  animation: blinker 1s  infinite;
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+}
+
+center #pointer{
+  width:4.5%;
+  transform:translate(0px, 20px);
+  animation: pointer_translate 1s  infinite;
+}
+
+@keyframes pointer_translate {
+  50% {
+    transform:translate(0px, 30px);
+  }
+}
+
+center canvas{
+  border:1px black solid;
+}
+
+center div{
+  transition:opacity 0.5s, hidden 0.5s;
+}
+
+center .shown{
+  display:block;
+  opacity: 1;
+  margin-bottom:247px;
+  
+}
+
+center .shownCanvas{
+  display:block;
+  opacity: 1;
+}
+
+center .hidden{
+  display:none;
+  opacity: 0;
+}
+
+/* 
+    Début du Footer
+*/
+
+footer {
+  
+}
+
+footer div:last-child{
+  margin-top:15px;
+}
+
+footer div i{
+  margin-left:35px;
+  font-style:italic;
+  color:grey;
+  font-size:12px;
+  font-family: 'Secular One', sans-serif;
+}
+
+footer #social_media_bar {
+  
+}
+
+footer #social_media_bar a {
+  color:black;
+  text-decoration:none;
+  font-size:25px;
+  margin-left:35px;
+  transition:transform 0.2s, color 0.2s;
+}
+
+footer #social_media_bar a:hover {
+  transform:scale(1.6);
+}
+
+footer #social_media_bar #facebook:hover {
+  color:#1c2abd;
+}
+footer #social_media_bar #twitter:hover {
+  color:#34cceb;
+}
+footer #social_media_bar #instagram:hover {
+  color:#a82057;
+}
+footer #social_media_bar #linkedin:hover {
+  color:blue;
+}
+
+/*
+  Styling du Caret
+*/
+
+#cmd {
+  font-size: 16px;
+  background: black;
+  color: white;
+  overflow: hidden;
+  display: inline;
+  float:left;
+}
+
+#cmd span {
+  float: left;
+  padding-left: 3px;
+  padding-top:-13px;
+  white-space: pre;
+}
+#cursor {
+  float: left;
+  margin-left:5px;
+  width: 9px;
+  height: 20px;
+  background: white;
+}
+input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
